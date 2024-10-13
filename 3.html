@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JSON Display</title>
+</head>
+<body>
+    <h1>JSON Example</h1>
+    <button onclick="displayData()">Data Display</button>
+    <div id="displayJson"></div>
+    <script>
+        const Jsondata = {'name': 'abhi', 'age': 20, 'uni': 'anurag'};
+        
+        function displayData() {
+            const jsonString = JSON.stringify(Jsondata, null, 4);
+            document.getElementById("displayJson").innerText = jsonString;
+        }
+    </script>
+</body>
+</html>
